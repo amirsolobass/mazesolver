@@ -1,6 +1,5 @@
-from graphics import Window, Line, Point
+from graphics import Line, Point
 import time
-import random
 
 
 class Cell:
@@ -61,7 +60,7 @@ class Cell:
 
         fill_color = "red"
         if undo:
-            fill_color = "gray"
+            fill_color = "blue"
 
         line = Line(Point(x_center, y_center), Point(x_center2, y_center2))
         self.__win.draw_line(line, fill_color)
@@ -71,4 +70,4 @@ class Cell:
         if self.__win is None:
             return
         self.__win.redraw()
-        time.sleep(0.01)
+        time.sleep(0.1)

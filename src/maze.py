@@ -25,6 +25,7 @@ class Maze:
         self.__win = win
         if seed:
             random.seed(seed)
+        
 
         self.__create_cells()
         self.__break_entrance_and_exit()

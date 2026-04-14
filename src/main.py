@@ -1,8 +1,23 @@
 from graphics import Line, Point, Window
-from cell import Cell
-from maze import Maze
 
 def main():
+    win = Window(800, 600)
+    win.show_main_menu()
+    win.wait_for_close()
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
+
+
+    """
+    # Old way to create a maze
     num_rows = 20
     num_cols = 30
     margin = 20
@@ -17,9 +32,4 @@ def main():
     maze = Maze(margin, margin, num_rows, num_cols, cell_size_x, cell_size_y, win)
 
     maze.solve()
-
-
-    win.wait_for_close()
-
-if __name__ == "__main__":
-    main()
+    """
